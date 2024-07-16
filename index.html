@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour guide</title>
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Swiper CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Bootstrap CSS link -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fa-solid fa-earth-americas"></i> Travelista. </a>
+        <nav class="navbar">
+            <div id="nav-close" class="fas fa-times"></div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#shop">Shop</a>
+            <a href="#book">Booking</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <a href="#" class="fa-solid fa-tags"></a>
+            <div id="search-btn" class="fas fa-search"></div>
+        </div>
+    </header>
+
+    <div class="search-form">
+        <div id="close-search" class="fas fa-times"></div>
+        <form action="">
+            <input type="search" name="" placeholder="search here...." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </div>
+
+    <!-- Home section -->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box" style="background: url('bridge.jpg') no-repeat;">
+                        <div class="content">
+                            <span> Discover Your </span>
+                            <h3>Next Escape!</h3>
+                            <p>Your dream vacation is a click away. Hit 'Get Started' now!</p>
+                            <a href="#" class="btn">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box second" style="background: url('mountain.jpg') no-repeat;">
+                        <div class="content">
+                            <span> Adventure </span>
+                            <h3>Awaits!</h3>
+                            <p>Thrills await. Click 'Get Started' and chase them down!</p>
+                            <a href="#" class="btn">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url('waterfall.jpg') no-repeat;">
+                        <div class="content">
+                            <span> Book Your </span>
+                            <h3>Dream Getaway!</h3>
+                            <p>What are you waiting for? Dive in and click 'Get Started' below!</p>
+                            <a href="#" class="btn">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Booking section -->
+    <section class="book" id="book">
+        <div class="container">
+            <div class="main-text">
+                <h1><span>B</span>ook</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 py-3 py-md-0">
+                    <img src="travel.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 py-3 py-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <form action="#">
+                                <input type="text" class="form-control" placeholder="Voyage Point!!" required><br>
+                                <input type="text" class="form-control" placeholder="Crew count" required><br>
+                                <input type="date" class="form-control" placeholder="Arrivals" required><br>
+                                <input type="date" class="form-control" placeholder="Leaving" required><br>
+                                <textarea class="form-control" rows="5" name="text" placeholder="Enter your Details"></textarea><br>
+                                <input type="submit" value="Book Now" class="submit" required>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- idea section -->
+     <section class="category">
+        <h1 class="heading">quest plans</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="ziplining.jpg" alt="">
+                <h3>Zip Lining</h3>
+                <p>Experience the thrill of soaring through the treetops!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="hiking.jpg" alt="">
+                <h3>Hiking</h3>
+                <p>Discover the beauty of nature one step at a time.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="scuba.jpg" alt="">
+                <h3>Scuba Diving</h3>
+                <p>Dive into a world of wonder beneath the waves.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="rock.jpg" alt="">
+                <h3>Rock Climbing</h3>
+                <p>Scale towering cliffs, and enjoy the sense of accomplishment at the summit.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="para.jpg" alt="">
+                <h3>Paragliding</h3>
+                <p>Feel the ultimate adrenaline rush as you freefall.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="surf.jpg" alt="">
+                <h3>Surfing</h3>
+                <p>Catch the perfect wave and ride the ocean's energy.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+     </section>
+
+     <!-- about section -->
+      <section class="about" id="about">
+        <div class="image">
+            <img src="about.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>Embark on Your Next Adventure with Travelista!</h3>
+            <p>Welcome to Travelista, your ultimate gateway to unforgettable journeys and breathtaking destinations! Our mission is to inspire and guide travelers around the world, helping you discover hidden gems, iconic landmarks, and everything in between. Whether you’re seeking thrilling adventures, serene retreats, or cultural immersions, Travelista offers personalized travel experiences tailored to your unique preferences.</p>
+            <p>With our expert guides, curated itineraries, and insider tips, you can explore the world with confidence and ease. From the majestic peaks of the Himalayas to the vibrant streets of Tokyo, let Travelista be your trusted companion on every step of your journey. Start planning your dream vacation today and create memories that will last a lifetime!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+      </section>
+
+      <!-- shop section -->
+       <section class="shop" id="shop">
+        <h1 class="heading">featured products</h1>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="backpack.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>survival kits</h3>
+                        <div class="price">Rs. 350.00 - Rs. 1000.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="torch.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>survival kits</h3>
+                        <div class="price">Rs. 350.00 - Rs. 1000.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="boots.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>survival kits</h3>
+                        <div class="price">Rs. 350.00 - Rs. 1000.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="tent.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>survival kits</h3>
+                        <div class="price">Rs. 350.00 - Rs. 1000.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="cook.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>survival kits</h3>
+                        <div class="price">Rs. 350.00 - Rs. 1000.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="bag.avif" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>survival kits</h3>
+                        <div class="price">Rs. 350.00 - Rs. 1000.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="kit.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>survival kits</h3>
+                        <div class="price">Rs. 350.00 - Rs. 1000.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+       </section>
+
+       <!-- services -->
+
+       <section class="services">
+        <h1 class="heading">what we offer</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="backpack1.png" alt="">
+                <h3>complete guide</h3>
+                <p>Your all-in-one adventure handbook.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="package.png" alt="">
+                <h3>custom packages</h3>
+                <p>Design your dream journey.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="airplane.png" alt="">
+                <h3>family trips</h3>
+                <p>Fun-filled adventures for all ages.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="info.png" alt="">
+                <h3>train guide</h3>
+                <p>Navigate the tracks with ease.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="destination.png" alt="">
+                <h3>adventure trail</h3>
+                <p>Navigate the tracks with ease.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        </div>
+       </section>
+
+    <!-- newsletter -->
+     <section class="newsletter">
+        <div class="content">
+            <h1 class="heading">subscribe now</h1>
+            <p>Unlock exclusive travel insights.</p>
+            <form action="">
+                <input type="email" name="" placeholder="enter your email" id="" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+     </section>       
+<!-- footer section  -->
+
+<section class="contact" id="contact">
+    <div class="box-container">
+        <div class="box">
+            <h3>links</h3>
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#shop">shop</a>
+            <a href="#book">booking</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+            <a href="#">my wishlist</a>
+            <a href="#">ask questions</a>
+            <a href="#">terms of use</a>
+            <a href="#">privacy policy</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"><i class="fas fa-phone"></i> +123-355-666</a>
+            <a href="#"><i class="fas fa-phone"></i> +223-443-123</a>
+            <a href="#"><i class="fas fa-envelope"></i> abc@gmail.com</a>
+            <a href="#"><i class="fas fa-map"></i> nellore, Ap, 524004</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"><i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"><i class="fab fa-github"></i> github </a>
+        </div>
+    </div>
+    <div class="credit">created by <span>Thapaswi S</span> | all rights reserved!</div>
+</section>
+    <!-- Swiper JS link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS link -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
